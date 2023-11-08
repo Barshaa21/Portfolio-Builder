@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 9px;
+  overflow-x: hidden;
+}
+body {
+  font-family: -apple-system, system-ui, "Segoe UI", Roboto, Oxygen, Ubuntu,
+    Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background: #fafafa;
+}
+
+.skills {
+  width: 100%;
+}
+
+/* active link in navbar */
+.active_link {
+  /* background-color: rgb(242, 5, 5); */
+  font-weight: bold;
+  display: flex;
+  text-align: center;
+  width: 100%;
+  border-left: 1px solid #ccc; /* Add a left border */
+  box-shadow: 4px 0 0 rgb(15, 14, 14), 4px 4px 0 rgb(6, 6, 6); /* Create an outward-rounded effect on the right side */
+}
+
+/* cutsom carousel */
+.custom-carousel button {
+  background-color: white;
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 33px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* background-color: #cccccc; */
+  background-color: #add0f1;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: rgb(239, 240, 243);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #cccccc;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #a1d1f8;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.navbar {
+  position: fixed;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar a {
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+}
+
+.navbar li {
+  list-style-type: none;
+}
+
+.inner-div {
+  margin: 0 auto;
+}
+
+/* components of top */
+
+/*------------------ MEDIA QUERY 1-------- */
+@media (min-width: 609px) {
+  html {
+    font-size: 10px;
+  }
+
+  .center-comp {
+    margin: 1rem 3rem;
+  }
+  .skills {
+    width: 50%;
+  }
+}
+/* ------SECOND MEDIA QUERY --------*/
+@media (min-width: 860px) {
+  .navbar {
+    flex-direction: column;
+    justify-content: start;
+    gap: 3rem;
+    min-height: 100%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .skills {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1500px) {
+  .skills {
+    width: 31%;
+  }
+}
+/*------ THIRD MEDIA QUERY ------*/
+@media (min-width: 1300px) {
+  html {
+    font-size: 16px;
+  }
+  .navbar {
+    gap: 0.8rem;
+    /* width: 15%; */
+    font-size: 1rem;
+    align-items: flex-start;
+  }
+}
