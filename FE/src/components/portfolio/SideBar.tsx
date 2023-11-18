@@ -28,10 +28,7 @@ const getTemplateId = () => {
   return templateId ? JSON.parse(templateId) : "";
 };
 const classNameFunc = ({ isActive }: any) =>
-  // isActive
-  //   ? // ? "active_link bg-white font-bold  inset-0 flex text-center w-full bg-opacity-50 backdrop-blur-lg  border border-gray-300"
-  //     "active_link bg-[#DD6275]  font-bold  underline underline-white  flex text-center w-full rounded-full rounded-tr-none rounded-br-none  border-l border-gray-300"
-  //   : " flex text-center text-center w-full";
+
   isActive
     ? // ? "active_link bg-white font-bold  inset-0 flex text-center w-full bg-opacity-50 backdrop-blur-lg  border border-gray-300"
       "active_link bg-gray-800 p-2  font-bold  underline underline-white  flex text-center rounded-tr-none rounded-br-none  border-l border-gray-300"
@@ -59,12 +56,6 @@ export default function SideBar({ ShowSidebar, viewSidebar }: Iprops) {
     return c.admin.value;
   });
 
-  // const showid = (id: any) => {
-  //   dispatch(setId(id));
-  //   localStorage.setItem("templateId", JSON.stringify(id));
-  //   console.log(id, "template");
-  //   // console.log(template, "template");
-  // };
 
   const saveTemplateId = (id: any) => {
     const newData = {
@@ -156,9 +147,7 @@ export default function SideBar({ ShowSidebar, viewSidebar }: Iprops) {
             </button>
           </a>
 
-          {/* <div onClick={() => showid(1)}>Template1</div>
-          <div onClick={() => showid(2)}>Template2</div>
-          <div onClick={() => showid(3)}>Template3</div> */}
+     
         </div>
       ) : (
         ""
@@ -217,11 +206,7 @@ export default function SideBar({ ShowSidebar, viewSidebar }: Iprops) {
             </li>
 
             <li className={`text-gray-700  text-center w-full `}>
-              {/* <NavLink
-                className={classNameFunc}
-                to="/  main/editPortfolio"
-                // className="flex text-center"
-              > */}
+         
               <div className="mb-7" onClick={toggle}>
                 <i
                   className={`fa-solid fa-palette   text-[1.5rem] ${
