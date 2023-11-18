@@ -24,55 +24,7 @@ export default function Home(): ReactElement {
   return (
     <div className="h-screen pt-[4.5rem]">
       <div>
-        <header>
-          {/* <nav className=" mx-auto flex items-center justify-between bg-black p-4">
-            <ul className="flex space-x-6  text-white">
-              <li>
-                <a href="/" className="hover:text-gray-300">
-                  <p
-                    className={`text-center  text-[1.5rem]  text-gray-300 px-9`}
-                    style={{ fontFamily: "fantasy" }}
-                  >
-                    Portico
-                  </p>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/about"
-                  className="hover:text-gray-300 text-[1.5rem] text-center m "
-                  style={{ fontFamily: "fantasy" }}
-                >
-                  About
-                </a>
-              </li>
-              <li>
-                <Link
-                  to="/contact"
-                  className="hover:text-gray-300 text-[1.5rem] text-center"
-                  style={{ fontFamily: "fantasy" }}
-                >
-                  Contact
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/allTemplates"
-                  className="hover:text-gray-300 text-[1.5rem] text-center"
-                  style={{ fontFamily: "fantasy" }}
-                >
-                  Templates
-                </Link>
-              </li>
-            </ul>
-            <button
-              type="submit"
-              className="w-[5rem] bg-white hover:bg-slate-200 font-bold py-2 px-4 rounded-md focus:outline-none focus:shadow-outline-blue active:bg-gray-200"
-            >
-              Log In
-            </button>
-          </nav> */}
-        </header>
+ 
         <div className="bg-[#1F0F53]">
           <div className=" h-full text-white text-center">
             <span className="text-[6rem]">
